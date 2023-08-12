@@ -1,0 +1,46 @@
+$base-color-light: #fffffe;
+$base-color-dark: #16161a;
+
+@font-face {
+  font-family: "Cooper";
+  src: local("Cooper"),
+    url(../fonts/Cooper-Black-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Rewir";
+  src: local("Rewir"), url(../fonts/Rewir-Light.ttf) format("opentype");
+}
+
+.app {
+  font-family: Rewir;
+  transition: background-color 0.5s ease;
+}
+
+.app--light {
+  background-color: $base-color-light;
+  .app {
+    &__header {
+      background-color: $base-color-light;
+    }
+    &__intro {
+      color: $base-color-dark;
+    }
+  }
+}
+
+.app--dark {
+  background-color: $base-color-dark;
+  .app {
+    &__header {
+      background-color: $base-color-dark;
+    }
+    &__intro {
+      color: $base-color-light;
+    }
+  }
+}
+
+button {
+  font-family: Rewir;
+}

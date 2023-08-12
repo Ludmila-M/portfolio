@@ -1,0 +1,10 @@
+.app__header {
+    display: flex;
+    justify-content: flex-end;
+    height: 5vh;
+    transition: background-color 0.5s ease;
+}
+
+.app__header-switch {
+    align-self: center;
+}

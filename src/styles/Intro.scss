@@ -1,0 +1,26 @@
+.app__intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.6rem;
+    height: 95vh;
+}
+
+.app__intro-name, .app__intro-role {
+    font-size: 2.5rem;
+}
+
+.app__intro-button {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 6px 16px 1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 6px 16px 1px rgba(66, 68, 90, 1);
+    box-shadow: 0px 6px 16px 1px rgba(66, 68, 90, 0.2);
+    height: 50px;
+    width: 200px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    background-color: #7f5af0;
+    color: #fffffe;
+}
