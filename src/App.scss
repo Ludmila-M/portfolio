@@ -4,17 +4,20 @@ $base-color-dark: #16161a;
 @font-face {
   font-family: "Cooper";
   src: local("Cooper"),
-    url(../fonts/Cooper-Black-Regular.ttf) format("opentype");
+    url(fonts/Cooper-Black-Regular.ttf) format("opentype");
 }
 
 @font-face {
   font-family: "Rewir";
-  src: local("Rewir"), url(../fonts/Rewir-Light.ttf) format("opentype");
+  src: local("Rewir"), url(fonts/Rewir-Light.ttf) format("opentype");
 }
 
 .app {
   font-family: Rewir;
   transition: background-color 0.5s ease;
+  &__category {
+    height: 90vh;
+  }
 }
 
 .app--light {
@@ -22,8 +25,9 @@ $base-color-dark: #16161a;
   .app {
     &__header {
       background-color: $base-color-light;
+      color: $base-color-dark;
     }
-    &__intro {
+    &__category {
       color: $base-color-dark;
     }
   }
@@ -34,8 +38,9 @@ $base-color-dark: #16161a;
   .app {
     &__header {
       background-color: $base-color-dark;
+      color: $base-color-light;
     }
-    &__intro {
+    &__category {
       color: $base-color-light;
     }
   }

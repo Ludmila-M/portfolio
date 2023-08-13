@@ -1,17 +1,16 @@
-.app__intro {
+.intro {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 1.6rem;
-    height: 95vh;
 }
 
-.app__intro-name, .app__intro-role {
+.intro__name, .intro__role {
     font-size: 2.5rem;
 }
 
-.app__intro-button {
+.intro__button {
     cursor: pointer;
     -webkit-box-shadow: 0px 6px 16px 1px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 6px 16px 1px rgba(66, 68, 90, 1);
