@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Intro, Bio, Experience, Contact } from "./pages";
+import React, { useState } from "react";
+import { Intro, Bio, Experience, Contact, Projects } from "./pages";
 import { Header } from "./components";
 import { Categories } from "./enums/categories";
 import "./App.scss";
@@ -16,6 +16,8 @@ const App = () => {
         return <Bio />;
       case Categories.EXPIERENCE:
         return <Experience />;
+      case Categories.PROJECTS:
+        return <Projects />;
       case Categories.CONTACT:
         return <Contact />;
       default:
@@ -36,6 +38,7 @@ const App = () => {
         <Header
           switchTheme={switchTheme}
           setPickedCategory={setPickedCategory}
+          pickedCategory={pickedCategory}
         />
         {pickCategory(pickedCategory)}
       </div>

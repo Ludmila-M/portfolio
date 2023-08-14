@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../../data.json";
+import { basicData } from "../../data";
 import './Intro.scss';
 
 
@@ -7,14 +7,14 @@ const Intro = () => {
   return (
     <div className="app__category intro">
       <div className="intro__name">
-        <span>{data.intro}</span>{' '}
-        <span>{data.name}.</span>
+        <span>{basicData.intro}</span>{' '}
+        <span>{basicData.name}.</span>
       </div>
       <div className="intro__role">
-        <span>{data.role}.</span>
+        <span>{basicData.role}.</span>
       </div>
       <div className="intro__contact">
-        <button className="intro__button">{data.contact}</button>
+        <button className="intro__button">{basicData.contact}</button>
       </div>
     </div>
   );

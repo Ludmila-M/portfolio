@@ -3,15 +3,18 @@
     justify-content: flex-end;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
     transition: background-color 0.5s ease;
 }
 
 .header__button {
     cursor: pointer;
+    transition: all .2s ease-in-out;
     border: none;
     background-color: transparent;
     font-size: 2rem;
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 .header__nav {

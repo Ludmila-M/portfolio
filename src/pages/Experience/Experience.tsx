@@ -1,23 +1,35 @@
 import React from "react";
-import { Card } from "../../components"; 
-import mark from "../../assets/github-mark.svg";
+import { Card } from "../../components";
+import { experienceData } from "../../data";
 
-const projectsList = [
-  { photo: mark, name: "X", description: "X desc" },
-  { photo: mark, name: "Y", description: "Y desc" },
-  { photo: mark, name: "Z", description: "Z desc" },
+const rolesList = [
+  {
+    role: experienceData.firstRole,
+    company: experienceData.companyName,
+    description: experienceData.firstRoleDescription,
+  },
+  {
+    role: experienceData.secondRole,
+    company: experienceData.companyName,
+    description: experienceData.secondRoleDescription,
+  },
 ];
 
-const Resume = () => {
+const Experience = () => {
   return (
     <div className="app__category resume row justify-content-center p-5">
       <div className="col-4">
-        {projectsList.map(({ photo, name, description }, index: number) => (
-          <Card photo={photo} name={name} description={description} key={index} />
+        {rolesList.map(({ company, role, description }, index: number) => (
+          <Card
+            key={index}
+            title={role}
+            subtitle={company}
+            description={description}
+          />
         ))}
       </div>
     </div>
   );
 };
 
-export default Resume;
+export default Experience;
